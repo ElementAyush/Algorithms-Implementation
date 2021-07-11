@@ -2,6 +2,8 @@ class MinimumEditDistance{
 
   public int computeDistance(String a , String b , int pos1 , int pos2){
 
+    if(a.length())
+
     if(a.charAt(pos1) == b.charAt(pos2)){
       computeDistance(a, b, pos1 - 1, pos2 - 1) ;
     }
