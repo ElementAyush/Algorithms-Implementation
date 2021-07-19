@@ -18,6 +18,5 @@ class MaximumPriceRodCutting{
     int length = 4 ;
     System.out.println(maximumPriceRodCutPrice(pricePerLength, length)) ;
 
-
   }
 }
