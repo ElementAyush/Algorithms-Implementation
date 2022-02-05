@@ -7,19 +7,6 @@ class Lcs{
        if(strLen == 0 || substrLen == 0)
         return 0; 
 
-       if(str.charAt(strLen - 1) == substr.charAt(substrLen - 1)){
-       	if(dp[strLen - 1][substrLen - 1] != -1){
-       		return dp[strLen - 1][substrLen - 1] ; 
-         } 
-          return dp[strLen - 1][substrLen - 1] = 1 + computeLCS(str,substr,strLen - 1,substrLen - 1,dp) ;  
-       }
-       else{
-       		if(dp[strLen - 1][substrLen - 1] != -1){
-       		   return dp[strLen - 1][substrLen - 1] ;
-       		}
-       	    return dp[strLen - 1][substrLen - 1] = Math.max(computeLCS(str,substr,strLen - 1,substrLen,dp)
-       		                                           ,computeLCS(str,substr,strLen,substrLen - 1,dp));
-       }
 
        //return dp[0][0] ;
 	}
