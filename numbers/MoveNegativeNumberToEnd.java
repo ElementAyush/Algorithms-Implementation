@@ -19,7 +19,7 @@ class MoveNegativeNumberToEnd{
 				i++ ;
 			while(arr[j] > 0 && j > i)
 				j-- ;
-			swap(arr,i , j) ;
+			swap(arr, i , j) ;
 		}
 
 		for(int k : arr){
